@@ -1,6 +1,6 @@
 variable "loc" {
   description = "Default Azure Region"
-  default = "East Us"
+  default = "EastUs"
 }
 
 variable "tags" {
@@ -9,5 +9,10 @@ variable "tags" {
       env = "training"
   }
 }
+
+variable "webapplocs" {
+  default = ["eastus2", "uksouth","centralindia"]
+}
+
 
 
