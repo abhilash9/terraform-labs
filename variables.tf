@@ -1,18 +1,16 @@
 variable "loc" {
   description = "Default Azure Region"
-  default = "EastUs"
+  default     = "EastUs"
 }
 
 variable "tags" {
   default = {
-      source = "citadel"
-      env = "training"
+    source = "citadel"
+    env    = "training"
   }
 }
 
 variable "webapplocs" {
-  default = ["eastus2", "uksouth","centralindia"]
+  default = []
 }
-
-
 
